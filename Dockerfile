@@ -13,7 +13,7 @@ RUN apt-get update && \
     rm kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz
 
 # Add Kafka binaries to PATH
-ENV PATH="/opt/kafka/bin:$PATH"
+ENV PATH="~/kafka_2.13-3.6.1/bin:$PATH"
 
 # Expose ports
 EXPOSE 9092 2181

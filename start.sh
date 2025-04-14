@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Lancer Zookeeper en arrière-plan
-/opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties &
+~/kafka_2.13-3.6.1/bin/zookeeper-server-start.sh ~/kafka_2.13-3.6.1/config/zookeeper.properties &
 
 # Attendre que Zookeeper démarre
 sleep 5
 
 # Lancer Kafka
-/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+~/kafka_2.13-3.6.1/bin/kafka-server-start.sh ~/kafka_2.13-3.6.1/config/server.properties
