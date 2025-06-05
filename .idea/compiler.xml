@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gateway-server" />
+        <module name="titration" />
+        <module name="server-config" />
+        <module name="common-dto" />
+      </profile>
+      <profile name="Annotation profile for shared-micro" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="shared-micro" />
+      </profile>
+      <profile name="Annotation profile for terrain-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="subventions-service" />
+        <module name="utilisateur-service" />
+        <module name="terrain-service" />
+        <module name="paysan-service" />
+        <module name="appel-service" />
+        <module name="admin-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-service" options="-parameters" />
+      <module name="appel-service" options="-parameters" />
+      <module name="common-dto" options="" />
+      <module name="gateway-server" options="-parameters" />
+      <module name="paysan-service" options="-parameters" />
+      <module name="server-config" options="-parameters" />
+      <module name="shared-micro" options="-parameters" />
+      <module name="subventions-service" options="-parameters" />
+      <module name="terrain-service" options="-parameters" />
+      <module name="titration" options="-parameters" />
+      <module name="utilisateur-service" options="-parameters" />
+    </option>
+  </component>
+</project>
