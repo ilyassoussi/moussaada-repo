@@ -31,7 +31,7 @@
         </processorPath>
         <module name="shared-micro" />
       </profile>
-      <profile name="Annotation profile for utilisateur-service" enabled="true">
+      <profile name="Annotation profile for admin-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
